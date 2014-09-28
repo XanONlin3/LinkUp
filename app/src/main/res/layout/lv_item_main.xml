@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#303030"> <!--change to #000000 -->
+
+    <!-- icon -->
+    <ImageView
+        android:id="@+id/imageViewOptIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/button_icon"       />
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/txtViewOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageViewOptIcon"
+        android:textColor="#00CCFF"
+        android:textSize="20sp"
+        android:text ="Title"
+        android:layout_alignTop="@+id/imageViewOptIcon"
+        android:layout_toRightOf="@+id/imageViewOptIcon"
+        android:layout_marginTop="4dp" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/txtViewOptionDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:text ="Description"
+        android:layout_toEndOf="@+id/imageViewOptIcon"
+        android:layout_alignBottom="@+id/imageViewOptIcon"
+        android:layout_toRightOf="@+id/imageViewOptIcon"
+        android:layout_marginBottom="4dp" />
+
+        <!-- checkBox -->
+        <CheckBox
+            android:id ="@+id/checkBoxOption"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:textColor="#00CCFF"
+            android:clickable="false"    />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Link Up</string>
+    <string name="banner">lynklink.com/linkup</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- option Headers -->
+    <string name="contactAct">Contact List</string>
+
+    <string-array name="Options">
+        <item>Add new contact</item>
+        <item>Link a website</item>
+        <item>Link a location</item>
+        <item>Link social media</item>
+        <item>Link phone number</item>
+        <item>Link business card</item>
+        <item>Link photo/logo</item>
+        <item>View profile</item>
+        <item>View contacts</item>
+        <item>Security</item>
+    </string-array>
+
+    <string-array name="OptionDesc">
+        <item>Add a new link</item>
+        <item>Go to or save a website</item>
+        <item>Show \'em where it\'s at</item>
+        <item>Expand your network</item>
+        <item>Call or save a number</item>
+        <item>Show \'em who\'s boss</item>
+        <item>Be recognized</item>
+        <item>View your profile</item>
+        <item>View your links</item>
+        <item>Secure your data</item>
+    </string-array>
+
+    <string-array name="OptionHeaders">
+        <item>Linkup options</item>
+        <item>Manage options</item>
+        <item>Security</item>
+    </string-array>
+
+
+</resources>

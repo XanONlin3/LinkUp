@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:padding="10dp"
+    android:background="#303030">
+
+    <!-- Contact Identicon/image -->
+    <ImageView
+        android:id="@+id/imageViewOptIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/xx_identicon"
+        android:layout_alignParentTop="true" />
+
+    <!-- Contact Name -->
+    <TextView
+        android:id="@+id/txtViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageViewOptIcon"
+        android:textColor="#00CCFF"
+        android:textSize="20sp"
+        android:text ="Firstname Lastname"
+        android:layout_alignTop="@+id/imageViewOptIcon"
+        android:layout_toRightOf="@+id/imageViewOptIcon"
+        android:layout_marginTop="2dp" />
+
+    <!-- Contact phone -->
+    <TextView
+        android:id="@+id/txtViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:text ="(###)###.####"
+        android:layout_toEndOf="@+id/imageViewOptIcon"
+        android:layout_alignBottom="@+id/imageViewOptIcon"
+        android:layout_toRightOf="@+id/imageViewOptIcon"
+        android:layout_marginBottom="2dp" />
+
+</RelativeLayout>
