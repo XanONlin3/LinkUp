@@ -23,7 +23,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
     String[] options;
     String[] optionHeaders;
-    /*int [] optionImgs ={R.drawable.linkup, R.drawable.wslink, R.drawable.location, R.drawable.soc_media,
+    /*int [] optionImgs ={R.drawable.linkup, R.drawable.wslink, R.drawable.location, R.drawable.atom,
                          R.drawable.phone, R.drawable.strike, R.drawable.picture, R.drawable.circle,
                          R.drawable.star, R.drawable.shield}; */
     String[] optionDescriptions;
@@ -67,7 +67,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         rows.add(new Item(R.drawable.linkup, options[0], optionDescriptions[0], false));
         rows.add(new Item(R.drawable.wslink, options[1], optionDescriptions[1], false));
         rows.add(new Item(R.drawable.location, options[2], optionDescriptions[2], false));
-        rows.add(new Item(R.drawable.soc_media, options[3], optionDescriptions[3], false));
+        rows.add(new Item(R.drawable.atom, options[3], optionDescriptions[3], false));
         rows.add(new Item(R.drawable.phone, options[4], optionDescriptions[4], false));
         rows.add(new Item(R.drawable.strike, options[5], optionDescriptions[5], false));
         rows.add(new Item(R.drawable.picture, options[6], optionDescriptions[6], false));
