@@ -4,29 +4,16 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="horizontal"
-    android:baselineAligned="false"
-    android:background="@drawable/app_bg">
+    android:baselineAligned="false">
 
-    <!-- Search Bar -->
-    <SearchView
-        android:id="@+id/searchView1"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="40dp"
-        android:queryHint="Search Contacts" />
+
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginTop="100dp">
+        android:layout_marginLeft="20dp"
+        >
 
         <!-- Contact List-->
         <ListView
@@ -34,7 +21,8 @@
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight ="1"
-            android:fastScrollEnabled="true"/>
+            android:fastScrollEnabled="true"
+            android:layout_marginRight="1dp"/>
 
         <!-- Side Bar -->
         <LinearLayout
@@ -42,9 +30,34 @@
             android:layout_width="20dp"
             android:layout_height="fill_parent"
             android:gravity="center_horizontal"
-            android:background="#00CCFF"
-            android:orientation="vertical">
+            android:background="@color/blue"
+            android:orientation="vertical"
+            android:layout_marginBottom="50dp">
         </LinearLayout>
     </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:layout_alignParentBottom="true"
+       android:background="@color/transparent">
+        <!-- Search Bar -->
+        <SearchView
+            android:id="@+id/searchView1"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:queryHint="Search Contacts" />
+
+       <!-- add contact btn-->
+       <ImageButton
+           android:id="@+id/btn_function"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="6"
+           android:background="@drawable/add"
+           android:contentDescription="Add new Link" />
+
+   </LinearLayout>
 
 </RelativeLayout>

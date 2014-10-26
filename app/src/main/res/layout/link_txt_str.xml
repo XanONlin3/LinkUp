@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f1f1f">
+
+    <!-- Description-->
+
+    <TextView
+        android:id="@+id/tv_instruction"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="Instruction description here"
+        android:gravity="center_vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textSize="21sp"
+        android:textColor="@color/blue"
+        android:background="@drawable/app_bg"   />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <!-- Users value-->
+        <EditText
+            android:id="@+id/et_txtStr"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="6"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="text here"
+            android:textColor="#ffffff"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+        <!-- function btn-->
+        <ImageButton
+            android:id="@+id/btn_function"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/blue"    />
+    </LinearLayout>
+
+    <!-- Save user value-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+        <View
+            android:id="@+id/ViewColorPickerHelper"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/dividerVertical"
+            android:layout_marginLeft="64dp"/>
+        <Button
+            android:id="@+id/btn_save"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/save"
+            android:drawablePadding="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/saveBtnTxt"
+            android:gravity="center_vertical"
+            android:enabled="false" />
+        <!-- android:background="?android:attr/selectableItemBackground -->
+    </RelativeLayout>
+</LinearLayout>

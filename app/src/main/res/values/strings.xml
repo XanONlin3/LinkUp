@@ -5,9 +5,23 @@
     <string name="banner">lynklink.com/linkup</string>
     <string name="action_settings">Settings</string>
 
-    <!-- option Headers -->
-    <string name="contactAct">Contact List</string>
+    <string name="saveBtnTxt">Save Data</string>
 
+    <string name="website_instruction">Enter the URL you\'d like to link.</string>
+    <string name="httpText">http://</string>
+
+    <string name="phone_instruction">Enter the phone number you\'d like to link.</string>
+    <string name="ph_hint">Phone no.</string>
+
+    <string name="addr_hint">Address or location name</string>
+
+    <!-- Activity Headers -->
+    <string name="contactAct">Contact List</string>
+    <string name="websiteAct">Link a URL</string>
+    <string name="phoneAct">Link a phone No.</string>
+    <string name="addrAct">Link a location</string>
+
+    <!-- option Titles-->
     <string-array name="Options">
         <item>Add new contact</item>
         <item>Link a website</item>
@@ -21,6 +35,7 @@
         <item>Security</item>
     </string-array>
 
+    <!-- option Desc-->
     <string-array name="OptionDesc">
         <item>Add a new link</item>
         <item>Go to or save a website</item>

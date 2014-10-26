@@ -2,11 +2,44 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lyfelink.linkup" >
 
+    <permission
+        android:name="com.lyfelink.linkup.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission
+        android:name="com.lyfelink.linkup.permission.MAPS_RECEIVE"/>
+    <uses-permission
+        android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission
+        android:name="android.permission.READ_CONTACTS"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCnDgkw-KK2lKtg7mn_qj88g7cZtpmKQSM"/>
+
+<!-- MAIN -->
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
@@ -16,12 +49,48 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+<!-- CONTACTS -->
         <activity
             android:name=".ContactListActivity"
+            android:parentActivityName=".MainActivity"
             android:label="@string/contactAct" >
             <intent-filter>
                 <action android:name="com.lyfelink.linkup.ContactListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+<!-- WEBSITE -->
+        <activity
+            android:name=".LinkWebsiteActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:label="@string/websiteAct" >
+            <intent-filter>
+                <action android:name="com.lyfelink.linkup.LinkListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+<!-- PHONE -->
+        <activity
+            android:name=".LinkPhoneActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:label="@string/phoneAct" >
+            <intent-filter>
+                <action android:name="com.lyfelink.linkup.LinkPhoneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+<!-- ADDRESS -->
+        <activity
+            android:name=".LinkAddrActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/addrAct" >
+            <intent-filter>
+                <action android:name="com.lyfelink.linkup.LinkAddrActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

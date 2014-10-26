@@ -36,6 +36,7 @@
         android:id="@+id/listViewMain"
         android:layout_below="@+id/imageBtnLinkup"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:background="#383a3d"/>
 
 </RelativeLayout>
